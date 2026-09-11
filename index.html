@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réservation | Location & Transit</title>
+  <meta name="description" content="Réservez votre transport avec chauffeur — Location & Transit.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand-mark">▱</div>
+    <h1>LOCATION <span>&amp;</span> TRANSIT</h1>
+    <p>TRANSPORT AVEC CHAUFFEUR</p>
+    <div class="promise">CONFORT <b>•</b> SÉCURITÉ <b>•</b> PONCTUALITÉ</div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Réserver un transport</h2>
+      <p>Remplissez le formulaire ci-dessous. Votre demande sera préparée automatiquement pour WhatsApp.</p>
+    </section>
+
+    <form id="bookingForm" class="card">
+      <div class="grid">
+        <label>Nom et prénom<input name="name" required placeholder="Votre nom"></label>
+        <label>Téléphone / WhatsApp<input name="phone" required type="tel" placeholder="Votre numéro"></label>
+        <label>Date du trajet<input name="date" required type="date"></label>
+        <label>Heure de prise en charge<input name="time" required type="time"></label>
+        <label>Lieu de départ<input name="pickup" required placeholder="Adresse ou lieu"></label>
+        <label>Destination<input name="destination" required placeholder="Destination"></label>
+        <label>Nombre de passagers<input name="passengers" required min="1" type="number" placeholder="Ex. 4"></label>
+        <label>Véhicule souhaité<select name="vehicle" required>
+          <option value="">Choisir</option>
+          <option>Ford Transit — 9 places, climatisée</option>
+          <option>Dacia — 7 places, climatisée</option>
+          <option>Peugeot 308 — climatisée</option>
+        </select></label>
+        <label>Type de service<select name="service" required>
+          <option value="">Choisir</option>
+          <option>Transfert</option>
+          <option>Excursion</option>
+          <option>Sortie</option>
+          <option>Correspondance</option>
+          <option>Autre</option>
+        </select></label>
+        <label class="full">Demande particulière<textarea name="message" rows="4" placeholder="Bagages, arrêt supplémentaire, précision…"></textarea></label>
+      </div>
+      <button type="submit">DEMANDER UNE RÉSERVATION SUR WHATSAPP</button>
+      <p class="privacy">Vos informations servent uniquement à traiter votre demande de réservation.</p>
+    </form>
+
+    <section class="contact">
+      <div><small>CONTACT</small><strong>71 144 86 95</strong></div>
+      <div><small>WHATSAPP</small><strong>0032 466 31 56 78</strong></div>
+    </section>
+  </main>
+
+  <footer>VOYAGEZ SEREIN, ON S’OCCUPE DU RESTE !</footer>
+  <script src="script.js"></script>
+</body>
+</html>
